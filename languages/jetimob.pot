@@ -1,0 +1,164 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jetimob\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-27 16:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: jetimob.php:178
+msgid "Install Required Plugins"
+msgstr ""
+
+#: jetimob.php:179
+msgid "Install Plugins"
+msgstr ""
+
+#. %s: plugin name.
+#: jetimob.php:181
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. %s: plugin name.
+#: jetimob.php:183
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: jetimob.php:184
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: jetimob.php:185
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:191
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:197
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:203
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:209
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:215
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:221
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:226
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:231
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jetimob.php:236
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: jetimob.php:237
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: jetimob.php:238
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. 1: plugin name.
+#: jetimob.php:240
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. 1: plugin name.
+#: jetimob.php:242
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: dashboard link.
+#: jetimob.php:244
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: jetimob.php:245
+msgid "Dismiss this notice"
+msgstr ""
+
+#: jetimob.php:246
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: jetimob.php:247
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#. Name of the plugin
+#. Author of the plugin
+msgid "Jetimob"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Plugin para sincronização de imóveis do Jetimob. Disponível para clientes do "
+"<a href=\"https://jetimob.com\">Jetimob</a>."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://jetimob.com"
+msgstr ""

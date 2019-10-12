@@ -1,4 +1,4 @@
-﻿=== Jetimob ===
+=== Jetimob ===
 Contributors: opaweb
 Tags: jetimob, crm, imobiliária, imóveis
 Requires at least: 4.5
@@ -29,6 +29,9 @@ Novamente, substitua URL pelo endereço do seu site e http por https, quando apl
 
 
 == Changelog ==
+
+= 3.0 =
+* Nova versão. Mecanismo de importação reescrito. O plugin cria os post types necessários para seu funcionamento, independente do tema utilizado.
 
 = 2.1 =
 * Implementação de teste de compatibilidade para servidores com função exec habilitada ou desabilitada. Recomenda-se usar a função exec() para uma maior confiabilidade na conexão com o servidor do Jetimob.

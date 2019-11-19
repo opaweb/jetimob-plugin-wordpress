@@ -1,7 +1,7 @@
 <?php 
 /**
  * Plugin Name: Jetimob
- * Version: 3.0
+ * Version: 3.1
  * Description: Plugin para sincronização de imóveis do Jetimob. Disponível para clientes do <a href="https://jetimob.com">Jetimob</a>.
  * Author: Jetimob
  * Author URI: https://jetimob.com
@@ -9,20 +9,29 @@
  * Domain Path: /languages/
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- *
+ * GitHub Plugin URI: opaweb/jetimob-plugin-wordpress
 */
+register_activation_hook( __FILE__, array( 'Your_Plugin_Class_Name', 'activate' ) );
 
-	// Atualização de plugin do servidor Jetimob
-
-		require 'plugin_update_check.php';
-		$MyUpdateChecker = new PluginUpdateChecker_2_0 (
-	   'https://kernl.us/api/v1/updates/59808dd0b942f9474a611de9/',
-	   __FILE__,
-	   'jetimob',
-	   1
-	);
-
-
+/**
+  * Plugin Activation hook function to check for Minimum PHP and WordPress versions
+  * @param string $wp Minimum version of WordPress required for this plugin
+  * @param string $php Minimum version of PHP required for this plugin
+  */
+ function activate( $wp = '4.8', $php = '7.2.24' ) {
+    global $wp_version;
+    if ( version_compare( PHP_VERSION, $php, '<' ) )
+        $flag = 'PHP';
+    elseif
+        ( version_compare( $wp_version, $wp, '<' ) )
+        $flag = 'WordPress';
+    else
+        return;
+    $version = 'PHP' == $flag ? $php : $wp;
+    deactivate_plugins( basename( __FILE__ ) );
+    wp_die('<p>O plugin <strong>Jetimob/strong> requer '.$flag.'  versão '.$version.' ou superior.</p>','Plugin Activation Error',  array( 'response'=>200, 'back_link'=>TRUE ) );
+}
+	
 /**
  * Opções de Configuração do Plugin
  * Jetimob
@@ -165,6 +174,13 @@ function jetimob_register_required_plugins() {
 				'source'      => dirname( __FILE__ ).'/addon/search-filter-pro.zip',
 				'required'  => true,
 			),
+		array(
+				'name'      => 'Github Updater',
+				'slug'		=> 'github-updater',
+				'source'      => 'https://codeload.github.com/afragen/github-updater/zip/master',
+				'required'  => true,
+			),
+		
 	);
 
 		$config = array(

@@ -30,6 +30,10 @@ Novamente, substitua URL pelo endereço do seu site e http por https, quando apl
 
 == Changelog ==
 
+= 3.1 =
+* Definição de requisitos mínimos de PHP para utilização do plugin. Se não atendidos, a instalação falha. (PHP 7.2.24 e WP 4.8).
+* Inclusão de método de atualização direta via GitHub
+
 = 3.0 =
 * Nova versão. Mecanismo de importação reescrito. O plugin cria os post types necessários para seu funcionamento, independente do tema utilizado.
 

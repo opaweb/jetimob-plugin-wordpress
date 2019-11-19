@@ -9,7 +9,7 @@
  * Domain Path: /languages/
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * GitHub Plugin URI: opaweb/jetimob-plugin-wordpress
+ * GitHub Plugin URI: https://github.com/opaweb/jetimob-plugin-wordpress
 */
 register_activation_hook( __FILE__, array( 'Your_Plugin_Class_Name', 'activate' ) );
 

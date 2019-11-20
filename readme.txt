@@ -71,3 +71,5 @@ Correção de diversos bugs. Atualização recomendada.
 
 = 0.5 =
 Primeira implementação dos recursos de integração.
+
+~Current Version:3.1~

@@ -117,7 +117,7 @@ get_header();
 			endwhile;
 
 			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
+			the_posts_navigation();
 
 			// If no content, include the "No posts found" template.
 		else :

@@ -30,6 +30,9 @@ Novamente, substitua URL pelo endereço do seu site e http por https, quando apl
 
 == Changelog ==
 
+= 3.1.1 =
+* Correção de função inválida.
+
 = 3.1 =
 * Definição de requisitos mínimos de PHP para utilização do plugin. Se não atendidos, a instalação falha. (PHP 7.2.24 e WP 4.8).
 * Inclusão de método de atualização direta via GitHub
@@ -72,4 +75,4 @@ Correção de diversos bugs. Atualização recomendada.
 = 0.5 =
 Primeira implementação dos recursos de integração.
 
-~Current Version:3.1~
+~Current Version:3.1.1~

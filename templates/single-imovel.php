@@ -31,7 +31,7 @@ Galleria.run('.galleria', {
                 ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
+                        <?php if ( has_post_thumbnail() ) : ?>
                         <header class="entry-header">
                             <?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
                         </header>
@@ -124,7 +124,7 @@ Galleria.run('.galleria', {
                                 sprintf(
                                     wp_kses(
                                         /* translators: %s: Name of current post. Only visible to screen readers */
-                                        __( 'Continuar lendo<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
+                                        __( 'Continuar lendo<span class="screen-reader-text"> "%s"</span>', 'jetimob' ),
                                         array(
                                             'span' => array(
                                                 'class' => array(),
@@ -137,7 +137,7 @@ Galleria.run('.galleria', {
 
                             wp_link_pages(
                                 array(
-                                    'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+                                    'before' => '<div class="page-links">' . __( 'Pages:', 'jetimob' ),
                                     'after'  => '</div>',
                                 )
                             );
@@ -259,7 +259,7 @@ Galleria.run('.galleria', {
                         ?>
 
                         <footer class="entry-footer">
-                            <?php twentynineteen_entry_footer(); ?>
+                            Publicado por <?php the_author_posts_link(); ?> em <?php the_time('F jS, Y'); ?> - <?php the_category(', '); ?> <?php edit_post_link(__('{Editar}'), ''); ?>
                         </footer><!-- .entry-footer -->
 
                         <?php if ( ! is_singular( 'attachment' ) ) : ?>

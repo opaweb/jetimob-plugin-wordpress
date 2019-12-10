@@ -1,8 +1,8 @@
 === Jetimob ===
 Contributors: opaweb
 Tags: jetimob, crm, imobiliária, imóveis
-Requires at least: 4.5
-Tested up to: 4.7
+Requires at least: 4.8
+Tested up to: 5.3
 Stable tag: 2.1
 License: GPLv2 ou mais recente
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

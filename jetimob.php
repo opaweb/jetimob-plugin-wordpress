@@ -1,7 +1,7 @@
 <?php 
 /**
  * Plugin Name: Jetimob
- * Version: 3.1.1
+ * Version: 3.1.2
  * Description: Plugin para sincronização de imóveis do Jetimob. Disponível para clientes do <a href="https://jetimob.com">Jetimob</a>.
  * Author: Jetimob
  * Author URI: https://jetimob.com

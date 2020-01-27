@@ -33,6 +33,23 @@ $arquivo = $caminho.'/jetimob.json';
 $str = file_get_contents($arquivo,FILE_USE_INCLUDE_PATH,$context);
 $str1=utf8_encode($str);
 $str1=json_decode($str1, true);
+
+/*
+
+Caso queira utilizar as funções da versão anterior do plugin, comente a partir da linha contendo "foreach" até o último "}" antes do fechamento da tag PHP "?>".
+
+Também descomente a linha abaixo correspondente ao tema utilizado: Houzez ou Realia.
+Será necessário refazer essa configuração após cada atualização do plugin, pelo menos por enquanto.
+É recomendado que utilize as funções do plugin ao invés de funções de tema.
+Não será fornecido suporte para integrações com temas específicos.
+*/
+
+//REALIA
+//include('themes/Realia/imoveis_update.php');
+
+//HOUZEZ
+//include('themes/Houzez/imoveis_update.php');
+
 foreach($str1 as $key=>$value){
         $check = get_posts(array(
        'post_type' => 'imovel', 

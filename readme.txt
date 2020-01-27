@@ -30,6 +30,9 @@ Novamente, substitua URL pelo endereço do seu site e http por https, quando apl
 
 == Changelog ==
 
+= 3.1.2 =
+* Correção de retrocompatibilidade com versão anterior do plugin.
+
 = 3.1.1 =
 * Correção de função inválida.
 

@@ -17,11 +17,11 @@ function generateRandomString($length = 10) {
 $jetimob_options = get_option( 'jetimob_option_name' ); 
 $api = $jetimob_options['api'];
 if(function_exists('exec')){
-	$file = exec('curl https://www.jetimob.com/services/'.$api.'/imoveis?a='.generateRandomString().' -o '.$caminho.'/jetimob.json');
+	$file = exec('curl https://api.jetimob.app/webservice/'.$api.'/imoveis?a='.generateRandomString().' -o '.$caminho.'/jetimob.json');
     var_dump(generateRandomString());
 }
 else {
-	$file = file_get_contents('https://www.jetimob.com/services/'.$api.'/imoveis?a='.generateRandomString());
+	$file = file_get_contents('https://api.jetimob.app/webservice/'.$api.'/imoveis?a='.generateRandomString());
 	file_put_contents($caminho.'/jetimob.json', $file);    
 }
 

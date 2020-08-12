@@ -27,12 +27,12 @@ function Generate_Featured_Image( $image_url, $post_id  ){
     $res2= set_post_thumbnail( $post_id, $attach_id );
 }
 
-$headers = array('http'=>array('method'=>'GET','header'=>'Content: type=application/json \r\n'.'$agent \r\n'.'$hash'));
+$headers = array('http'=>array('method'=>'GET','header'=>'Content: type=application/json, charset:utf-8'));
 $context=stream_context_create($headers);
 $arquivo = $caminho.'/jetimob.json';
 $str = file_get_contents($arquivo,FILE_USE_INCLUDE_PATH,$context);
-$str1=utf8_encode($str);
-$str1=json_decode($str1, true);
+//$str1=utf8_encode($str);
+$str1=json_decode($str, true);
 
 /*
 

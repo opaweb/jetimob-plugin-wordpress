@@ -31,8 +31,8 @@ $headers = array('http'=>array('method'=>'GET','header'=>'Content: type=applicat
 $context=stream_context_create($headers);
 $arquivo = $caminho.'/jetimob.json';
 $str = file_get_contents($arquivo,FILE_USE_INCLUDE_PATH,$context);
-$str1=utf8_encode($str);
-$str1=json_decode($str1, true);
+//$str1=utf8_encode($str);
+$str1=json_decode($str, true);
 foreach($str1 as $key=>$value){
         $check = get_posts(array(
        'post_type' => 'imovel', 

@@ -3,7 +3,7 @@ Contributors: opaweb
 Tags: jetimob, crm, imobiliária, imóveis
 Requires at least: 4.8
 Tested up to: 5.3
-Stable tag: 2.1
+Stable tag: 3.1
 License: GPLv2 ou mais recente
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Novamente, substitua URL pelo endereço do seu site e http por https, quando apl
 
 
 == Changelog ==
+
+= 3.1.3 = 
+* Atualização dos endpoints da api - Novo Jetimob
 
 = 3.1.2 =
 * Correção de retrocompatibilidade com versão anterior do plugin.

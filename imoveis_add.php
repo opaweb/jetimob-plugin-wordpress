@@ -15,9 +15,9 @@ $arquivo = $caminho.'/jetimob.json';
 
 $str = file_get_contents($arquivo,FILE_USE_INCLUDE_PATH,$context);
 
-$str1=utf8_encode($str);
+//$str1=utf8_encode($str);
 
-$str1=json_decode($str1, true);
+$str1=json_decode($str, true);
 
 //echo $str1;
 

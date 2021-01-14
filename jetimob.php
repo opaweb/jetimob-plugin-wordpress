@@ -1,7 +1,7 @@
 <?php 
 /**
  * Plugin Name: Jetimob
- * Version: 3.1.3
+ * Version: 3.1.4
  * Description: Plugin para sincronização de imóveis do Jetimob. Disponível para clientes do <a href="https://jetimob.com">Jetimob</a>.
  * Author: Jetimob
  * Author URI: https://jetimob.com
@@ -11,7 +11,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * GitHub Plugin URI: https://github.com/opaweb/jetimob-plugin-wordpress
 */
-register_activation_hook( __FILE__, array( 'Your_Plugin_Class_Name', 'activate' ) );
+register_activation_hook( __FILE__, array( 'Jetimob', 'activate' ) );
 
 /**
   * Plugin Activation hook function to check for Minimum PHP and WordPress versions
@@ -161,24 +161,24 @@ function jetimob_register_required_plugins() {
 		array(
 				'name'      => 'Featured Image from URL',
 				'slug'      => 'featured-image-from-url',
-				'required'  => true,
+				'required'  => false,
 			),
 		array(
 				'name'      => 'Font Awesome',
 				'slug'      => 'font-awesome',
-				'required'  => true,
+				'required'  => false,
 			),
 		array(
 				'name'      => 'Search & Filter Pro',
 				'slug'		=> 'search-filter-pro',
 				'source'      => dirname( __FILE__ ).'/addon/search-filter-pro.zip',
-				'required'  => true,
+				'required'  => false,
 			),
 		array(
 				'name'      => 'Github Updater',
 				'slug'		=> 'github-updater',
 				'source'      => 'https://codeload.github.com/afragen/github-updater/zip/master',
-				'required'  => true,
+				'required'  => false,
 			),
 		
 	);
